@@ -1,0 +1,51 @@
+@use "../helpers/" as *;
+
+.about-us {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: rem(30);
+    @include small {
+      flex-direction: column;
+      align-items: start;
+      row-gap: rem(15);
+    }
+  }
+  &__content {
+    flex: 0 0 rem(516);
+    @include medium {
+      flex-basis: rem(450);
+    }
+    @include small {
+      display: contents;
+      flex: auto;
+    }
+  }
+  &__image {
+    @include small {
+     width: 70%;
+    }
+    @include x-small {
+      width: 100%;
+    }
+  }
+  &__title {
+    margin-bottom: fluid(15, 30);
+    @include small {
+      margin-bottom: rem(0);
+    }
+  }
+  &__text {
+    margin-bottom: fluid(25, 50);
+    @include small {
+      margin-bottom: rem(0);
+    }
+  }
+  &__button {
+    @include small {
+      margin-top: rem(10);
+      order: 1;
+    }
+  }
+}

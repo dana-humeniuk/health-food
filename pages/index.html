@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
+  </head>
+  <body data-smooth-scroll="true">
+    <div class="wrapper">
+      {{> header}}
+      <main>
+        <section class="hero">
+          <div class="hero__container container">
+            <div class="hero__content">
+              <h1 class="hero__title">Just <span>Eat healthy</span> food to live a healthier life</h1>
+              <p class="hero__subtitle">
+                Enjoy a healthy life by eating healthy foods that have extraordinary flavors that make your life
+                healthier for today and in the future
+              </p>
+              <button class="hero__button button button--accent" data-micromodal-trigger="modal-order" type="button">
+                Order Now
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="choose-us">
+          <div class="choose-us__container container">
+            <div class="choose-us__header">
+              <h2 class="choose-us__title">Why Choose Us?</h2>
+              <p class="choose-us__subtitle">Organic food is grown without the use of synthetic chemicals</p>
+            </div>
+
+            <div class="choose-us__main">
+              <div class="choose-us__main-item">
+                <img
+                  class="choose-us__main-item-image"
+                  src="/images/easy-to-order.svg"
+                  alt="Easy to order"
+                  width="100"
+                  height="100"
+                />
+                <h3 class="choose-us__main-item-title">Easy to order</h3>
+                <p class="choose-us__main-item-text">foods include fresh produce, meats as well as processed</p>
+              </div>
+
+              <div class="choose-us__main-item">
+                <img
+                  class="choose-us__main-item-image"
+                  src="/images/order.svg"
+                  alt="Live Order"
+                  width="100"
+                  height="100"
+                />
+                <h3 class="choose-us__main-item-title">Live Order</h3>
+                <p class="choose-us__main-item-text">Place your online Order easily and get the food instantly</p>
+              </div>
+
+              <div class="choose-us__main-item">
+                <img
+                  class="choose-us__main-item-image"
+                  src="/images/organic.svg"
+                  alt="100% Organic"
+                  width="128"
+                  height="100"
+                />
+                <h3 class="choose-us__main-item-title">100% Organic</h3>
+                <p class="choose-us__main-item-text">Organic food is grown without the use of synthetic chemicals</p>
+              </div>
+            </div>
+
+            <div class="choose-us__footer">
+              <div class="choose-us__footer-item">
+                <span class="choose-us__footer-item-number">40+</span>
+                <h3 class="choose-us__footer-item-title">Food Partners</h3>
+              </div>
+
+              <div class="choose-us__footer-item">
+                <span class="choose-us__footer-item-number">459+</span>
+                <h3 class="choose-us__footer-item-title">Trusted Clients</h3>
+              </div>
+
+              <div class="choose-us__footer-item">
+                <span class="choose-us__footer-item-number">12k+</span>
+                <h3 class="choose-us__footer-item-title">Order Online</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-us section">
+          <div class="about-us__container container">
+            <div class="about-us__content">
+              <h2 class="about-us__title">About US</h2>
+              <p class="about-us__text">
+                Organic food is grown without the use of synthetic chemicals, such as human-made pesticides and
+                fertilizers, and does not contain genetically modified organisms (GMOs). Organic foods include fresh
+                produce, meats, and dairy products as well as processed foods such as crackers, drinks, and frozen
+                meals.
+              </p>
+              <button class="about-us__button button button--accent" type="button">Learn More</button>
+            </div>
+            <div class="about-us__image">
+              <img src="/public/images/about/image-group.png" alt="Fresh Food" width="640" height="722" />
+            </div>
+          </div>
+        </section>
+
+        <section class="fresh-food section">
+          <div class="fresh-food__container container">
+            <div class="fresh-food__image">
+              <img src="/public/images/fresh/group.png" alt="Fresh Food" width="585" height="480" />
+            </div>
+            <div class="fresh-food__content">
+              <h2 class="fresh-food__title">Fresh Vegetables Every Day</h2>
+              <p class="fresh-food__text">
+                Healthy life as informed declared we enjoy the margaret. Joy horrible moreover man feelings own shy.
+                Request norland neither mistake for yet. Between the for morning assured country believe.
+              </p>
+              <button class="fresh-food__button button button--accent" type="button">Learn More</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="chefs section">
+          <div class="chefs__container container">
+            <div class="chefs__content">
+              <h2 class="chefs__title">
+                Cooked by the<br />
+                Best Chefs
+              </h2>
+              <p class="chefs__text">
+                Believing neglected so so allowance existence departure in. In design active temper be uneasy. Thirty
+                for remove plenty regard you summer though. He preference connection astonished on of ye.
+              </p>
+              <ul class="chefs__list">
+                <li class="chefs__list-item">A guaranteed delicious meal</li>
+                <li class="chefs__list-item">Food is guaranteed hygienic</li>
+                <li class="chefs__list-item">Cooked quickly</li>
+              </ul>
+            </div>
+            <div class="chefs__image">
+              <img src="/public/images/chefs/group.png" alt="Best Chefs" width="727" height="622" />
+            </div>
+          </div>
+        </section>
+
+        <section class="dishes section">
+          <div class="dishes__container container">
+            <div class="dishes__header">
+              <h2 class="dishes__title">Special Dishes for you</h2>
+              <p class="dishes__subtitle">Made with premium & 100% Organic ingredients</p>
+            </div>
+
+            <div class="dishes__main swiper">
+              <div class="swiper-wrapper dishes__main-wrapper">
+                <div class="dishes__main-item swiper-slide">
+                  <img
+                    class="dishes__main-item-image"
+                    src="/public/images/dished/1.png"
+                    alt="Green Salad"
+                    width="250"
+                    height="250"
+                  />
+                  <h3 class="dishes__main-item-title">Green Salad</h3>
+                  <p class="dishes__main-item-text">
+                    A salad combined witha delicious cut of bacon and mixed with tasty and fresh sesome oil.
+                  </p>
+                </div>
+                <div class="dishes__main-item swiper-slide">
+                  <img
+                    class="dishes__main-item-image"
+                    src="/public/images/dished/2.png"
+                    alt="Beef Salad"
+                    width="250"
+                    height="250"
+                  />
+                  <h3 class="dishes__main-item-title">Beef Salad</h3>
+                  <p class="dishes__main-item-text">
+                    A salad combined witha delicious cut of beef and mixed with tasty and fresh sesome oil.
+                  </p>
+                </div>
+                <div class="dishes__main-item swiper-slide">
+                  <img
+                    class="dishes__main-item-image"
+                    src="/public/images/dished/3.png"
+                    alt="Nut Salad"
+                    width="250"
+                    height="250"
+                  />
+                  <h3 class="dishes__main-item-title">Nut Salad</h3>
+                  <p class="dishes__main-item-text">
+                    A salad combined witha delicious cut of nuts and mixed with tasty and fresh sesome oil.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <button class="dishes__button button button--accent" type="button">View All</button>
+          </div>
+        </section>
+
+        <section class="reviews section">
+          <div class="reviews__container container">
+            <h2 class="reviews__title">Happy Clients Says</h2>
+            <div class="reviews__main swiper">
+              <div class="reviews__main-wrapper swiper-wrapper">
+                <div class="reviews__main-item swiper-slide">
+                  <div class="reviews__main-header">
+                    <div class="reviews__main-header-wrapper">
+                      <img
+                        class="reviews__main-header-image"
+                        src="/public/images/reviews/1.png"
+                        alt="KHALIL NAZIR"
+                        width="91"
+                        height="91"
+                      />
+                      <div class="reviews__main-header-content">
+                        <h2 class="reviews__main-header-title">KHALIL NAZIR</h2>
+                        <p class="reviews__main-header-text">CEO of UI.Desk</p>
+                      </div>
+                    </div>
+                    <img
+                      class="reviews__main-header-quote"
+                      src="/public/images/quotes.svg"
+                      alt="quotes"
+                      width="86"
+                      height="70"
+                    />
+                  </div>
+                  <p class="reviews__main-text">
+                    Thirty for remove plenty regard you summer though. He preference Partiality on or continuing in
+                    particular principles as. Do believing oh disposing to supported allowance we.
+                  </p>
+                </div>
+
+                <div class="reviews__main-item swiper-slide">
+                  <div class="reviews__main-header">
+                    <div class="reviews__main-header-wrapper">
+                      <img
+                        class="reviews__main-header-image"
+                        src="/public/images/reviews/2.png"
+                        alt="ZEESHAN ANWER"
+                        width="91"
+                        height="91"
+                      />
+                      <div class="reviews__main-header-content">
+                        <h2 class="reviews__main-header-title">ZEESHAN ANWER</h2>
+                        <p class="reviews__main-header-text">CEO of UI Box</p>
+                      </div>
+                    </div>
+                    <img
+                      class="reviews__main-header-quote"
+                      src="/public/images/quotes.svg"
+                      alt="quotes"
+                      width="86"
+                      height="70"
+                    />
+                  </div>
+                  <p class="reviews__main-text">
+                    Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law
+                    built now. In built table in an rapid blush. Merits behind on afraid or warmly.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      {{> footer}}
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script type="module" src="/src/scripts/main.ts" defer></script>
+  </body>
+</html>

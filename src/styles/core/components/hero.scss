@@ -1,0 +1,67 @@
+@use "../helpers/" as *;
+
+.hero {
+  &__container {
+    padding-block: fluid(30, 166) fluid(30, 199);
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: rem(530);
+      width: fluid(300, 927);
+      height: fluid(300, 927);
+      background-image: url("/images/hero.png");
+      background-size: contain;
+      background-position: left center;
+      background-repeat: no-repeat;
+    }
+    
+    @include large {
+      &::after {
+        width: 100%;
+        height: 100%;
+       }
+    }
+    @include medium {
+      &::after {
+        width: 80%;
+        height: 80%;
+        left: fluid(480, 550);
+       }
+    }
+    @include small {
+      &::after {
+       display: none;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    max-width: rem(596);
+    @include large {
+      max-width: 50%;
+    }
+    @include medium {
+      max-width: 60%;
+    }
+   
+    @include small {
+     
+      max-width: none;
+      
+    }
+  }
+  &__title {
+    margin-bottom: fluid(15, 30);
+  }
+  &__subtitle {
+    margin-bottom: fluid(25, 50);
+    font-size: fluid(16, 24);
+  }
+}
