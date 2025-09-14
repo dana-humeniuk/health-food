@@ -5,16 +5,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 document.addEventListener("DOMContentLoaded", (): void => {
-  AOS.init(
-    {
-      duration: 900,
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 200,
-    }
-  );
+  AOS.init({
+    duration: 900,
+    easing: "ease-out-cubic",
+    once: true,
+    offset: 200,
+  });
 
-  const typed = new Typed("#typed-title", {
+  new Typed("#typed-title", {
     strings: ["live a healthier life", "eat well, feel great", "boost your energy"],
     typeSpeed: 50,
     loop: true,
