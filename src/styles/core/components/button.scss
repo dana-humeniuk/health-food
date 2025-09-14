@@ -17,6 +17,10 @@
   &:hover {
     transform: scale(1.02);
   }
+  &--sm {
+    padding: rem(18) rem(32);
+    font-size: fluid(16, 20);
+  }
   &--accent {
     background: var(--green-gradient);
   }

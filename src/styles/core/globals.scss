@@ -75,3 +75,8 @@ p,
 // ===========================
 // 🎯 UTILITIES
 // ===========================
+.gradient-text {
+  background: -webkit-linear-gradient(180deg, rgba(100, 187, 71, 1) 0%, rgba(44, 149, 83, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
