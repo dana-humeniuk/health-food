@@ -2,9 +2,24 @@ import "../styles/main.scss";
 
 import Typed from "typed.js";
 import AOS from "aos";
+import Lenis from "lenis";
+import MicroModal from 'micromodal';
+
+import "lenis/dist/lenis.css";
 import "aos/dist/aos.css";
 
 document.addEventListener("DOMContentLoaded", (): void => {
+  MicroModal.init({
+    disableScroll: true,
+    disableFocus: true,
+  });
+
+  new Lenis({
+    autoRaf: true,
+    duration: 1.6,
+    anchors: true,
+  });
+
   AOS.init({
     duration: 900,
     easing: "ease-out-cubic",

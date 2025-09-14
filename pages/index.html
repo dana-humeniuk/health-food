@@ -12,14 +12,25 @@
       <main>
         <section class="hero">
           <div class="hero__container container">
-            <div class="hero__content ">
-              <h1 class="hero__title">Just <span class="gradient-text">Eat healthy</span> food to <br><span id="typed-title" class="gradient-text"></span></h1>
+            <div class="hero__content">
+              <h1 class="hero__title">
+                Just <span class="gradient-text">Eat healthy</span> food to <br /><span
+                  id="typed-title"
+                  class="gradient-text"
+                ></span>
+              </h1>
               <p class="hero__subtitle">
                 Enjoy a healthy life by eating healthy foods that have extraordinary flavors that make your life
                 healthier for today and in the future
               </p>
-              <button class="hero__button button button--accent" data-micromodal-trigger="modal-order" type="button">
-                Order Now
+              <button
+                class="hero__button button button--accent"
+                data-micromodal-trigger="modal-window"
+                aria-label="Open Modal Window"
+                aria-controls="modal-window"
+                type="button"
+              >
+              Feedback
               </button>
             </div>
           </div>
@@ -29,7 +40,9 @@
           <div class="choose-us__container container">
             <div class="choose-us__header">
               <h2 data-aos="fade-up" data-aos-delay="50" class="choose-us__title">Why Choose Us?</h2>
-              <p data-aos="fade-up" data-aos-delay="100" class="choose-us__subtitle">Organic food is grown without the use of synthetic chemicals</p>
+              <p data-aos="fade-up" data-aos-delay="100" class="choose-us__subtitle">
+                Organic food is grown without the use of synthetic chemicals
+              </p>
             </div>
 
             <div class="choose-us__main">
@@ -99,7 +112,17 @@
                 produce, meats, and dairy products as well as processed foods such as crackers, drinks, and frozen
                 meals.
               </p>
-              <button data-aos="fade-up" data-aos-delay="150" class="about-us__button button button--accent" type="button">Learn More</button>
+              <button
+                data-aos="fade-up"
+                data-aos-delay="150"
+                class="about-us__button button button--accent"
+                type="button"
+                data-micromodal-trigger="modal-window"
+                aria-label="Open Modal Window"
+                aria-controls="modal-window"
+              >
+              Feedback
+              </button>
             </div>
             <div data-aos="fade-up" data-aos-delay="100" class="about-us__image">
               <img src="/public/images/about/image-group.png" alt="Fresh Food" width="640" height="722" />
@@ -118,7 +141,17 @@
                 Healthy life as informed declared we enjoy the margaret. Joy horrible moreover man feelings own shy.
                 Request norland neither mistake for yet. Between the for morning assured country believe.
               </p>
-              <button data-aos="fade-up" data-aos-delay="200" class="fresh-food__button button button--accent" type="button">Learn More</button>
+              <button
+                data-aos="fade-up"
+                data-aos-delay="200"
+                class="fresh-food__button button button--accent"
+                type="button"
+                data-micromodal-trigger="modal-window"
+                aria-label="Open Modal Window"
+                aria-controls="modal-window"
+              >
+              Feedback
+              </button>
             </div>
           </div>
         </section>
@@ -150,7 +183,9 @@
           <div class="dishes__container container">
             <div class="dishes__header">
               <h2 data-aos="fade-up" data-aos-delay="100" class="dishes__title">Special Dishes for you</h2>
-              <p data-aos="fade-up" data-aos-delay="150" class="dishes__subtitle">Made with premium & 100% Organic ingredients</p>
+              <p data-aos="fade-up" data-aos-delay="150" class="dishes__subtitle">
+                Made with premium & 100% Organic ingredients
+              </p>
             </div>
 
             <div data-aos="fade-up" data-aos-delay="200" class="dishes__main swiper">
@@ -329,13 +364,7 @@
             </div>
             <form class="subscribe__form">
               <label class="sr-only" for="email">Enter your email.</label>
-              <input 
-                type="email" 
-                id="email" 
-                name="email" 
-                placeholder="Enter your email." 
-                required 
-              >
+              <input type="email" id="email" name="email" placeholder="Enter your email." required />
               <button class="subscribe__button button button--accent button--sm" type="submit">Get Started</button>
             </form>
           </div>
@@ -343,6 +372,7 @@
       </main>
       {{> footer}}
     </div>
+    {{> modal}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <script type="module" src="/src/scripts/main.ts" defer></script>
   </body>
