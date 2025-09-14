@@ -4,11 +4,28 @@ import Typed from "typed.js";
 import AOS from "aos";
 import Lenis from "lenis";
 import MicroModal from 'micromodal';
+import GLightbox from 'glightbox';
 
 import "lenis/dist/lenis.css";
 import "aos/dist/aos.css";
+import "glightbox/dist/css/glightbox.css";
+
 
 document.addEventListener("DOMContentLoaded", (): void => {
+  const myGallery = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    
+});
+
+const dishesGalleryButton = document.querySelector('[data-dishes-gallery]');
+if (dishesGalleryButton) {
+  dishesGalleryButton.addEventListener('click', () => {
+    myGallery.open();
+  });
+}
+
   MicroModal.init({
     disableScroll: true,
     disableFocus: true,
