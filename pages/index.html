@@ -10,7 +10,7 @@
     <div class="wrapper">
       {{> header}}
       <main>
-        <section class="hero">
+        <section class="hero" id="home">
           <div class="hero__container container">
             <div class="hero__content">
               <h1 class="hero__title">
@@ -23,6 +23,8 @@
                 Enjoy a healthy life by eating healthy foods that have extraordinary flavors that make your life
                 healthier for today and in the future
               </p>
+              <img class="hero__image" src="/images/hero-small.jpg" alt="Hero" width="500" height="500" />
+
               <button
                 class="hero__button button button--accent"
                 data-micromodal-trigger="modal-window"
@@ -33,10 +35,11 @@
                 Feedback
               </button>
             </div>
+            
           </div>
         </section>
 
-        <section class="choose-us">
+        <section class="choose-us" id="choose-us">
           <div class="choose-us__container container">
             <div class="choose-us__header">
               <h2 data-aos="fade-up" data-aos-delay="50" class="choose-us__title">Why Choose Us?</h2>
@@ -85,24 +88,24 @@
 
             <div class="choose-us__footer">
               <div data-aos="fade-up" data-aos-delay="150" class="choose-us__footer-item">
-                <span class="choose-us__footer-item-number">40+</span>
+                <span class="choose-us__footer-item-number" id="partners"></span>
                 <h3 class="choose-us__footer-item-title">Food Partners</h3>
               </div>
 
               <div data-aos="fade-up" data-aos-delay="200" class="choose-us__footer-item">
-                <span class="choose-us__footer-item-number">459+</span>
+                <span class="choose-us__footer-item-number" id="clients"></span>
                 <h3 class="choose-us__footer-item-title">Trusted Clients</h3>
               </div>
 
               <div data-aos="fade-up" data-aos-delay="250" class="choose-us__footer-item">
-                <span class="choose-us__footer-item-number">12k+</span>
+                <span class="choose-us__footer-item-number" id="orders-online"></span>
                 <h3 class="choose-us__footer-item-title">Order Online</h3>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="about-us section">
+        <section class="about-us section" id="about">
           <div class="about-us__container container">
             <div class="about-us__content">
               <h2 data-aos="fade-up" data-aos-delay="50" class="about-us__title">About US</h2>
@@ -130,7 +133,7 @@
           </div>
         </section>
 
-        <section class="fresh-food section">
+        <section class="fresh-food section" id="fresh-food">
           <div class="fresh-food__container container">
             <div data-aos="fade-up" data-aos-delay="100" class="fresh-food__image">
               <img src="/public/images/fresh/group.png" alt="Fresh Food" width="585" height="480" />
@@ -156,7 +159,7 @@
           </div>
         </section>
 
-        <section class="chefs section">
+        <section class="chefs section" id="chefs">
           <div class="chefs__container container">
             <div class="chefs__content">
               <h2 data-aos="fade-up" data-aos-delay="100" class="chefs__title">
@@ -179,7 +182,7 @@
           </div>
         </section>
 
-        <section class="dishes section">
+        <section class="dishes section" id="order-dishes">
           <div class="dishes__container container">
             <div class="dishes__header">
               <h2 data-aos="fade-up" data-aos-delay="100" class="dishes__title">Special Dishes for you</h2>
@@ -236,7 +239,7 @@
           </div>
         </section>
 
-        <section class="reviews section">
+        <section class="reviews section" id="reviews">
           <div class="reviews__container container">
             <h2 data-aos="fade-up" data-aos-delay="100" class="reviews__title">Happy Clients Says</h2>
             <div data-aos="fade-up" data-aos-delay="200" class="reviews__main swiper">

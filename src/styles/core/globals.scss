@@ -66,11 +66,11 @@ p,
   color: var(--color-dark);
 }
 
-@include large {
-  br {
-    display: none !important;
-  }
-}
+// @include large {
+//   br {
+//     display: none !important;
+//   }
+// }
 
 // ===========================
 // 🎯 UTILITIES

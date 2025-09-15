@@ -12,10 +12,11 @@
   line-height: 1;
   color: var(--color-white);
   border: none;
+  white-space: nowrap;
   cursor: pointer;
   transition: var(--transition-base);
-  &:hover {
-    transform: scale(1.02);
+  @include hover {
+    scale: 1.02;
   }
   &--sm {
     padding: rem(18) rem(32);

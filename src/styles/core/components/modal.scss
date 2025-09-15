@@ -67,7 +67,7 @@
     border-radius: rem(20);
   }
   &__content {
-    padding: rem(45) rem(15);
+    padding: fluid(30, 45) rem(10);
     background-color: #fff;
     border-radius: rem(13);
     opacity: 0;
@@ -75,8 +75,9 @@
     width: 100%;
     position: relative;
   }
+  
   &__title {
-    font-size: rem(30);
+    font-size: fluid(24, 30);
     color: var(--color-black);
     margin-bottom: rem(12);
     font-weight: 500;
@@ -84,12 +85,11 @@
     text-align: center;
   
   }
-  &__form {
-  }
+  
   &__close {
     position: absolute;
-    right: rem(35);
-    top: rem(50);
+    right: rem(15);
+    top: rem(15);
     @media (any-hover: hover) {
       &:hover {
         & svg {

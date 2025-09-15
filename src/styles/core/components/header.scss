@@ -1,6 +1,65 @@
 @use "../helpers" as *;
 
 .header {
-  background-color: #274722;
   padding-block: fluid(15, 30);
+  &__container {
+    max-width: rem(1340);
+    margin-inline: auto;
+    padding-inline: rem(20);
+    
+  }
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: fluid(15, 40);
+  }
+  &__logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(5);
+    font-size: fluid(12, 16);
+    font-weight: 500;
+    color: var(--color-accent);
+    transition: var(--transition-base);
+    img{
+      width: fluid(24, 40);
+      height: fluid(24, 40);
+    }
+    @include hover {
+      color: var(--color-accent-dark);
+    }
+  }
+  &__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(20);
+  }
+  &__item{
+    font-weight: 400;
+    a{
+      position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+        bottom: 2;
+        left: 50%;
+
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: var(--color-accent);
+        transform: translate(-50%);
+        transition: var(--transition-base);
+      }
+      @include hover {
+        // color: var(--color-accent);
+        &::after{
+          width: 100%;
+        }
+      }
+    }
+  }
 }
