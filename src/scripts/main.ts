@@ -7,12 +7,15 @@ import MicroModal from "micromodal";
 import GLightbox from "glightbox";
 import { CountUp } from "countup.js";
 import { AccordionCollection } from "./components";
+import { BackTopButton } from "./components";
 
 import "lenis/dist/lenis.css";
 import "aos/dist/aos.css";
 import "glightbox/dist/css/glightbox.css";
 
 document.addEventListener("DOMContentLoaded", (): void => {
+  new BackTopButton(400, "top");
+
   new AccordionCollection();
 
   const countUpPartners = new CountUp("partners", 40, {

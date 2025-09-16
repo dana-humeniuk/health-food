@@ -95,6 +95,16 @@
     }
     &-link {
       font-weight: 500;
+      transition: var(--transition-base);
+      @include hover {
+        color: var(--color-accent-dark);
+      }
+    }
+    &-sublink{
+      transition: var(--transition-base);
+      @include hover {
+        color: var(--color-accent-dark);
+      }
     }
     &-sublist {
       display: flex;
