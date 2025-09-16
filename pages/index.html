@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home page</title>
+    <title>HealthyFood</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
   </head>
   <body data-smooth-scroll="true">
@@ -35,7 +35,6 @@
                 Feedback
               </button>
             </div>
-            
           </div>
         </section>
 
@@ -193,7 +192,11 @@
 
             <div data-aos="fade-up" data-aos-delay="200" class="dishes__main swiper">
               <div class="swiper-wrapper dishes__main-wrapper">
-                <a href="/public/images/dished/salad-1.jpg" class="dishes__main-item swiper-slide glightbox" data-gallery="gallery1">
+                <a
+                  href="/public/images/dished/salad-1.jpg"
+                  class="dishes__main-item swiper-slide glightbox"
+                  data-gallery="gallery1"
+                >
                   <img
                     class="dishes__main-item-image"
                     src="/public/images/dished/1.png"
@@ -206,7 +209,11 @@
                     A salad combined witha delicious cut of bacon and mixed with tasty and fresh sesome oil.
                   </p>
                 </a>
-                <a href="/public/images/dished/salad-2.jpg" class="dishes__main-item swiper-slide glightbox" data-gallery="gallery1">
+                <a
+                  href="/public/images/dished/salad-2.jpg"
+                  class="dishes__main-item swiper-slide glightbox"
+                  data-gallery="gallery1"
+                >
                   <img
                     class="dishes__main-item-image"
                     src="/public/images/dished/2.png"
@@ -219,7 +226,11 @@
                     A salad combined witha delicious cut of beef and mixed with tasty and fresh sesome oil.
                   </p>
                 </a>
-                <a href="/public/images/dished/salad-3.jpg" class="dishes__main-item swiper-slide glightbox" data-gallery="gallery1">
+                <a
+                  href="/public/images/dished/salad-3.jpg"
+                  class="dishes__main-item swiper-slide glightbox"
+                  data-gallery="gallery1"
+                >
                   <img
                     class="dishes__main-item-image"
                     src="/public/images/dished/3.png"
@@ -235,7 +246,9 @@
               </div>
             </div>
 
-            <button data-aos="fade-up" class="dishes__button button button--accent" data-dishes-gallery  type="button">View All</button>
+            <button data-aos="fade-up" class="dishes__button button button--accent" data-dishes-gallery type="button">
+              View All
+            </button>
           </div>
         </section>
 
@@ -356,6 +369,109 @@
                 </button>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section class="questions section" id="questions" data-js-accordion>
+          <div class="questions__container container">
+            <h2 class="questions__title">Frequently asked questions</h2>
+            <div class="questions__items"><div class="questions__item">
+              <button
+                class="questions__button"
+                id="accordion-button-1"
+                type="button"
+                aria-expanded="false"
+                aria-controls="accordion-panel-1"
+                data-js-accordion-button
+              >
+                1. What ingredients are used in the meals?
+              </button>
+              <div
+                class="questions__content"
+                role="region"
+                id="accordion-panel-1"
+                aria-labelledby="accordion-button-1"
+              >
+                <div class="questions__content-inner">
+                  We cook only with fresh, high-quality products from trusted suppliers. No preservatives, flavor
+                  enhancers, or artificial colors are ever added.
+                </div>
+              </div>
+            </div>
+            <div class="questions__item">
+              <button
+                class="questions__button"
+                id="accordion-button-2"
+                type="button"
+                aria-expanded="false"
+                aria-controls="accordion-panel-2"
+                data-js-accordion-button
+              >
+                2. Are customized meal plans available?
+              </button>
+              <div class="questions__content" role="region" id="accordion-panel-2" aria-labelledby="accordion-button-2">
+                <div class="questions__content-inner">
+                  Yes. We take your preferences and dietary restrictions into account. There are ready-made meal options
+                  (fitness, vegetarian, gluten-free, low-carb), as well as the possibility to create a personalized
+                  nutrition plan.
+                </div>
+              </div>
+            </div>
+            <div class="questions__item">
+              <button
+                class="questions__button"
+                id="accordion-button-3"
+                type="button"
+                aria-expanded="false"
+                aria-controls="accordion-panel-3"
+                data-js-accordion-button
+              >
+                3. How does delivery work?
+              </button>
+              <div class="questions__content" role="region" id="accordion-panel-3" aria-labelledby="accordion-button-3">
+                <div class="questions__content-inner">
+                  Meals are delivered daily at a time convenient for you. On average, delivery takes from 30 minutes to
+                  2 hours, depending on your city and district.
+                </div>
+              </div>
+            </div>
+            <div class="questions__item">
+              <button
+                class="questions__button"
+                id="accordion-button-4"
+                type="button"
+                aria-expanded="false"
+                aria-controls="accordion-panel-4"
+                data-js-accordion-button
+              >
+                4. How should meals be stored and reheated?
+              </button>
+              <div class="questions__content" role="region" id="accordion-panel-4" aria-labelledby="accordion-button-4">
+                <div class="questions__content-inner">
+                  Meals can be stored in the fridge for 48–72 hours. They are packed in sealed containers. For
+                  reheating, 2–3 minutes in a microwave or 5–7 minutes in an oven is enough.
+                </div>
+              </div>
+            </div>
+            <div class="questions__item">
+              <button
+                class="questions__button"
+                id="accordion-button-5"
+                type="button"
+                aria-expanded="false"
+                aria-controls="accordion-panel-5"
+                data-js-accordion-button
+              >
+                5. What order options are available?
+              </button>
+              <div class="questions__content" role="region" id="accordion-panel-5" aria-labelledby="accordion-button-5">
+                <div class="questions__content-inner">
+                  Both one-time orders and subscriptions are available. A one-time order is perfect for trying out our
+                  meals, while a subscription offers better value for regular healthy eating.
+                </div>
+              </div>
+            </div></div>
+            
           </div>
         </section>
 

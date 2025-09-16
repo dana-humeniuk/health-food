@@ -3,50 +3,49 @@ import "../styles/main.scss";
 import Typed from "typed.js";
 import AOS from "aos";
 import Lenis from "lenis";
-import MicroModal from 'micromodal';
-import GLightbox from 'glightbox';
-import { CountUp } from 'countup.js';
+import MicroModal from "micromodal";
+import GLightbox from "glightbox";
+import { CountUp } from "countup.js";
+import { AccordionCollection } from "./components";
 
 import "lenis/dist/lenis.css";
 import "aos/dist/aos.css";
 import "glightbox/dist/css/glightbox.css";
 
-
 document.addEventListener("DOMContentLoaded", (): void => {
-  
-    const countUpPartners = new CountUp('partners', 40,{
-      suffix: '+',
-      enableScrollSpy: true,
-      scrollSpyOnce: true,
-    });
-    countUpPartners.start();
-    const countUpClients = new CountUp('clients', 459,{
-      suffix: '+',
-      enableScrollSpy: true,
-      scrollSpyOnce: true,
-    });
-    countUpClients.start();
-    const countUpOrdersOnline = new CountUp('orders-online', 12,{
-      suffix: 'k+',
-      enableScrollSpy: true,
-      scrollSpyOnce: true,
-    });
-    countUpOrdersOnline.start();
-  
+  new AccordionCollection();
+
+  const countUpPartners = new CountUp("partners", 40, {
+    suffix: "+",
+    enableScrollSpy: true,
+    scrollSpyOnce: true,
+  });
+  countUpPartners.start();
+  const countUpClients = new CountUp("clients", 459, {
+    suffix: "+",
+    enableScrollSpy: true,
+    scrollSpyOnce: true,
+  });
+  countUpClients.start();
+  const countUpOrdersOnline = new CountUp("orders-online", 12, {
+    suffix: "k+",
+    enableScrollSpy: true,
+    scrollSpyOnce: true,
+  });
+  countUpOrdersOnline.start();
 
   const myGallery = GLightbox({
-    selector: '.glightbox',
+    selector: ".glightbox",
     touchNavigation: true,
     loop: true,
-    
-});
-
-const dishesGalleryButton = document.querySelector('[data-dishes-gallery]');
-if (dishesGalleryButton) {
-  dishesGalleryButton.addEventListener('click', () => {
-    myGallery.open();
   });
-}
+
+  const dishesGalleryButton = document.querySelector("[data-dishes-gallery]");
+  if (dishesGalleryButton) {
+    dishesGalleryButton.addEventListener("click", () => {
+      myGallery.open();
+    });
+  }
 
   MicroModal.init({
     disableScroll: true,

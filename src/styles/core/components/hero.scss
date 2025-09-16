@@ -4,7 +4,7 @@
   &__container {
     padding-block: fluid(30, 166) fluid(30, 199);
     position: relative;
-    
+
     &::after {
       content: "";
       position: absolute;
@@ -69,7 +69,9 @@
   }
   &__title {
     margin-bottom: fluid(15, 30);
-    font-size: fluid(32, 64);
+    font-size: fluid(36, 64);
+  
+    
     span#typed-title {
       white-space: nowrap;
     }
