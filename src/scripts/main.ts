@@ -8,12 +8,21 @@ import GLightbox from "glightbox";
 import { CountUp } from "countup.js";
 import { AccordionCollection } from "./components";
 import { BackTopButton } from "./components";
+import { Header } from "./components";
 
 import "lenis/dist/lenis.css";
 import "aos/dist/aos.css";
 import "glightbox/dist/css/glightbox.css";
 
 document.addEventListener("DOMContentLoaded", (): void => {
+  const lenis = new Lenis({
+    autoRaf: true,
+    duration: 1.6,
+    anchors: true,
+  });
+
+  new Header(lenis);
+  
   new BackTopButton(400, "top");
 
   new AccordionCollection();
@@ -55,11 +64,7 @@ document.addEventListener("DOMContentLoaded", (): void => {
     disableFocus: true,
   });
 
-  new Lenis({
-    autoRaf: true,
-    duration: 1.6,
-    anchors: true,
-  });
+ 
 
   AOS.init({
     duration: 900,

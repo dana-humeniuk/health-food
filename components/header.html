@@ -1,10 +1,11 @@
-<header class="header">
+<header class="header" data-js-header>
   <div class="header__container">
     <div class="header__content">
       <a class="header__logo" href="#home">
         <img src="/images/leaf.svg" alt="Logo" width="94" height="39" />
         HealthyFood</a
       >
+      <div class="header__overlay" data-js-header-overlay>
       <nav class="header__menu">
         <ul class="header__list">
           <li class="header__item">
@@ -31,6 +32,18 @@
         </ul>
       </nav>
       <a href="#order-dishes" class="header__button button button--secondary"> Order Now </a>
+      </div>
+
+      <button
+        data-js-header-burger-button
+        class="header__burger-button burger-button"
+        aria-label="Toggle menu"
+        title="Toggle menu"
+      >
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+      </button>
     </div>
   </div>
 </header>

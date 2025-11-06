@@ -1,13 +1,47 @@
 @use "../helpers" as *;
 
 .header {
+ 
+
   padding-block: fluid(15, 30);
+  
   &__container {
     max-width: rem(1340);
     margin-inline: auto;
     padding-inline: rem(20);
     
   }
+  &__overlay {
+    @include above-small {
+      display: contents;
+    }
+    @include small {
+      overflow-y: auto;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+      background-color: white;
+      padding: rem(180) rem(15);
+      display: flex;
+      flex-direction: column;
+      gap: rem(48);
+      align-items: center;
+      transition: var(--transition-base);
+      &:not(.is-active) {
+        translate: 100%;
+      }
+    }
+  }
+  &__burger-button {
+    @include above-small {
+      display: none;
+    }
+  }
+
   &__content{
     display: flex;
     align-items: center;
@@ -15,6 +49,8 @@
     gap: fluid(15, 40);
   }
   &__logo{
+    position: relative;
+    z-index: 9999;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,11 +72,32 @@
     align-items: center;
     justify-content: center;
     gap: rem(20);
+    @include small {
+      flex-direction: column;
+      gap: rem(10);
+      
+    }
   }
   &__item{
     font-weight: 400;
+    @include small {
+      font-size: rem(20);
+    }
+    &.is-active {
+      font-weight: 500;
+      color: var(--color-white);
+      background-color: var(--gray-08);
+      border: var(--border-slim-gray-darker);
+      border-radius: var(--radius-md);
+      pointer-events: none;
+      @include small {
+        color: var(--color-accent);
+        border: var(--border-slim-accent);
+      }
+    }
     a{
       position: relative;
+      
       &::after{
         content: '';
         position: absolute;
