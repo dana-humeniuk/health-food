@@ -16,6 +16,7 @@ class Header {
   private burgerButtonElement: HTMLElement | null;
   private menuItemElements: NodeListOf<HTMLElement>;
   private lenis;
+  // @ts-expect-error Lenis is imported in main.ts
   constructor(lenis) {
     this.rootElement = document.querySelector(this.selectors.root);
     this.overlayElement = this.rootElement?.querySelector(this.selectors.overlay) || null;
