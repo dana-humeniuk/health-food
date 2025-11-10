@@ -3,7 +3,7 @@ class Header {
     root: "[data-js-header] ",
     overlay: "[data-js-header-overlay]",
     burgerButton: "[data-js-header-burger-button]",
-    menuItem: ".header__item a",
+    menuItem: ".header a",
   };
 
   stateClasses = {
