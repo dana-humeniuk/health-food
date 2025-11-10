@@ -15,7 +15,7 @@
     @include above-small {
       display: contents;
     }
-    @include small {
+    @include medium {
       overflow-y: auto;
       position: fixed;
       z-index: 999;
@@ -37,7 +37,7 @@
     }
   }
   &__burger-button {
-    @include above-small {
+    @include above-medium {
       display: none;
     }
   }
