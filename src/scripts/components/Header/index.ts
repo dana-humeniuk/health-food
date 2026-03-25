@@ -3,7 +3,7 @@ class Header {
     root: "[data-js-header] ",
     overlay: "[data-js-header-overlay]",
     burgerButton: "[data-js-header-burger-button]",
-    menuItem: ".header a",
+    menuItem: ".header a", //Краще використовувати menuItem:"[data-js-header-menu] a" щоб не залежати від WP і для <nav class="header__menu" data-js-header-menu>
   };
 
   stateClasses = {
